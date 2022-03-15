@@ -1,3 +1,77 @@
+h1 {
+  text-align: center;
+}
+#game {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(113,154,253);
+}
+#result {
+  color: green;
+  text-align: center;
+}
+#game_control {
+  display: flex;  
+  justify-content: center;  
+}
+#game_restart {
+  color: black;
+  margin-top: 23px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(20,189,172);
+}
+#button0, #button1 {
+  border: none;
+  border-bottom: 4px solid grey;
+  border-right: 4px solid grey;
+}
+#button2 {
+  border: none;
+  border-bottom: 4px solid grey;
+}
+#button3, #button4 {
+  border: none;
+  border-bottom: 4px solid grey;
+  border-right: 4px solid grey;
+}
+#button5 {
+  border: none;
+  border-bottom: 4px solid grey;
+}
+#button6, #button7 {
+  border: none;
+  border-right: 4px solid grey;
+}
+#button8 {
+  border: none;
+}
+
+#game_level {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+ 
+  background-color: rgb(20,189,172);
+  display: inline-block;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin-left:20px;
+  margin-top: 20px;
+}
+
 .App {
   text-align: center;
 }
@@ -10,29 +84,5 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
